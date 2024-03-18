@@ -1,8 +1,8 @@
 package com.cydeo.bean_annotation;
 
-import com.cydeo.loosely_coupled.casefactory.Case;
-import com.cydeo.loosely_coupled.monitorfactory.Monitor;
-import com.cydeo.loosely_coupled.motherboardfactory.Motherboard;
+import com.cydeo.bean_annotation.casefactory.Case;
+import com.cydeo.bean_annotation.monitorfactory.Monitor;
+import com.cydeo.bean_annotation.motherboardfactory.Motherboard;
 
 
 public class PC {
