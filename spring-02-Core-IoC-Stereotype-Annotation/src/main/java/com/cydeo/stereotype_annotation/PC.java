@@ -1,8 +1,8 @@
 package com.cydeo.stereotype_annotation;
 
-import com.cydeo.streotype_annotation.casefactory.Case;
-import com.cydeo.streotype_annotation.monitorfactory.Monitor;
-import com.cydeo.streotype_annotation.motherboardfactory.Motherboard;
+import com.cydeo.stereotype_annotation.casefactory.Case;
+import com.cydeo.stereotype_annotation.monitorfactory.Monitor;
+import com.cydeo.stereotype_annotation.motherboardfactory.Motherboard;
 import lombok.Getter;
 
 @Getter
