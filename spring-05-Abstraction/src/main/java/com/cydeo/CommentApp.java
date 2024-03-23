@@ -18,7 +18,5 @@ public class CommentApp {
         CommentService commentService = context.getBean(CommentService.class);
         commentService.publishComment(comment);
 
-
-
     }
 }
