@@ -5,7 +5,6 @@ import com.cydeo.stereotype_annotation.model.DataStructure;
 import com.cydeo.stereotype_annotation.model.Microservice;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.core.type.StandardAnnotationMetadata;
 
 public class CourseApp {
 
