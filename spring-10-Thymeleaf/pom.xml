@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cydeo</groupId>
-    <artifactId>string-10-Thymeleaf</artifactId>
+    <artifactId>spring-10-Thymeleaf</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>string-10-Thymeleaf</name>
     <description>string-10-Thymeleaf</description>

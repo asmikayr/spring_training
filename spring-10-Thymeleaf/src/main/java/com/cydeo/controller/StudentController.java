@@ -19,7 +19,7 @@ public class StudentController {
     }
 
     @RequestMapping(value = "/welcome",method = RequestMethod.POST)//localhost:8080/welcome
-    @PostMapping("/welcome")
+  //  @PostMapping("/welcome")
     public String welcome(){
 
         return "student/welcome";
