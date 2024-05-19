@@ -1,13 +1,14 @@
 package com.cydeo.entity;
 
 import jakarta.persistence.Entity;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 @Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
+@ToString
 public class Location extends BaseEntity{
 
     private String name;
