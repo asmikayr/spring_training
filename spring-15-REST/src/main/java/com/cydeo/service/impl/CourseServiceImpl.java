@@ -23,32 +23,32 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public CourseDTO createCourse(CourseDTO course) {
-        courseRepository.save(mapperUtil.convert(course, new Course()));
+        courseRepository.save(mapperUtil.convert(course, Course.class));
         return course;
     }
 
     @Override
     public CourseDTO getCourseById(long courseId) {
         Course course = courseRepository.findById(courseId).get();
-        return mapperUtil.convert(course, new CourseDTO());
+        return mapperUtil.convert(course, CourseDTO.class);
     }
 
     @Override
     public List<CourseDTO> getCoursesByCategory(String category) {
         List<Course> list = courseRepository.findAllByCategory(category);
-        return list.stream().map(obj -> mapperUtil.convert(obj, new CourseDTO())).collect(Collectors.toList());
+        return list.stream().map(obj -> mapperUtil.convert(obj, CourseDTO.class)).collect(Collectors.toList());
     }
 
     @Override
     public List<CourseDTO> getCourses() {
         List<Course> list = courseRepository.findAll();
-        return list.stream().map(obj -> mapperUtil.convert(obj, new CourseDTO())).collect(Collectors.toList());
+        return list.stream().map(obj -> mapperUtil.convert(obj, CourseDTO.class)).collect(Collectors.toList());
     }
 
     @Override
     public void updateCourse(Long courseId, CourseDTO courseDTO) {
 
-        Course course = mapperUtil.convert(courseDTO, new Course());
+        Course course = mapperUtil.convert(courseDTO, Course.class);
 
         courseRepository.findById(courseId).ifPresent(dbCourse -> {
             dbCourse.setName(course.getName());
