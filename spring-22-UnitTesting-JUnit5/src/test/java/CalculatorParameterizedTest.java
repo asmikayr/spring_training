@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.EmptySource;
-import org.junit.jupiter.params.provider.NullAndEmptySource;
-import org.junit.jupiter.params.provider.NullSource;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.*;
 
 public class CalculatorParameterizedTest {
 
@@ -32,6 +29,18 @@ public class CalculatorParameterizedTest {
 
         Assertions.assertFalse(arg.isEmpty());
 
+    }
+
+    @ParameterizedTest
+    @MethodSource("stringProvider")
+    void testCase4(String arg){
+
+        Assertions.assertFalse(arg.isEmpty());
+
+    }
+
+    static String[] stringProvider(){
+        return new String[]{"Java", "JS", "TS"};
     }
 
 
